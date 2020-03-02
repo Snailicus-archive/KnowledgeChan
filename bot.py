@@ -1,4 +1,4 @@
-import sys
+import os
 
 import logic
 
@@ -25,5 +25,5 @@ if __name__ == '__main__':
     logic.pull_essences()
     logic.pull_combinations()
 
-    token = sys.argv[1]
+    token = os.environ['secret']
     bot.run(token)
