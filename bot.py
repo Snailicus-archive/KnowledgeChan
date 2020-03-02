@@ -10,6 +10,7 @@ bot = commands.Bot(command_prefix='?')
 @bot.event
 async def on_ready():
     print('o am ready, master')
+    print(os.environ['secret'])
 
 @bot.command()
 async def mewl(ctx):
