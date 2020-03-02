@@ -10,7 +10,6 @@ bot = commands.Bot(command_prefix='?')
 @bot.event
 async def on_ready():
     print('o am ready, master')
-    print(os.environ['secret'])
 
 @bot.command()
 async def mewl(ctx):
@@ -27,4 +26,5 @@ if __name__ == '__main__':
     logic.pull_combinations()
 
     token = os.environ['secret']
+    print(token)
     bot.run(token)
