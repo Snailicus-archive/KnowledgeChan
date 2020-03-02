@@ -26,5 +26,4 @@ if __name__ == '__main__':
     logic.pull_combinations()
 
     token = os.environ['secret']
-    print(token)
     bot.run(token)
